@@ -1,0 +1,81 @@
+{
+    "type": "vertical",
+    "tag": "list",
+    "elements": [
+      {
+        "type": "vertical",
+        "elements": [
+          {
+            "type": "text",
+            "text": "Titulo del chat principal",
+            "tag": "title"
+          },
+          {
+            "type": "text",
+            "text": "aqui aparece con texto la opcion",
+            "tag": "subtitle"
+          },
+          {
+            "type": "text",
+            "text": "un butexto en color gris",
+            "tag": "footer"
+          },
+          {
+            "type": "button",
+            "tag": "menu",
+            "title": "Boton para ver mas opciones",
+            "click": {
+              "actions": [
+                {
+                  "type": "publishText",
+                  "text": "Titulo cuando se habre el menu"
+                }
+              ]
+            }
+          },
+          {
+            "type": "horizontal",
+            "elements": [
+              {
+                "type": "vertical",
+                "elements": [
+                  {
+                    "type": "text",
+                    "tag": "title",
+                    "text": "Titulo de la categoria de opciones "
+                  },
+                  {
+                    "type": "button",
+                    "title": "Soy cliente",
+                    "subtitle": "si soy cliente en chiquito",
+                    "click": {
+                      "actions": [
+                        {
+                          "type": "publishText",
+                          "text": "escribe que soy cliente en el chat"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "button",
+                    "title": "No soy cliente",
+                    "subtitle": "No soy cliente en chiquito",
+                    "click": {
+                      "actions": [
+                        {
+                          "type": "publishText",
+                          "text": "escribe no soy cliente en el chat"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+          
+        ]
+      }
+    ]
+  }
